@@ -1,6 +1,6 @@
 import argparse
 import os
-import numpy
+import numpy as np
 from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories
@@ -27,6 +27,11 @@ def main(config_path):
     X_test = X_test / 255.0
     X_valid, X_train = X_train_full[:5000], X_train_full[5000:]
     y_valid, y_train = y_train_full[:5000], y_train_full[5000:]
+
+    ## set the seeds
+    seed = 2021 ## get it from config
+    tf.random.set_seed(seed)
+    np.random.seed(seed)
 
     ## define layers
     LAYERS = [
