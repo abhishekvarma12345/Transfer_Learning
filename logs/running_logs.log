@@ -1,0 +1,9 @@
+[2021-11-21 15:47:07,135: INFO: 01_basic_model_creation]: 
+********************
+[2021-11-21 15:47:07,135: INFO: 01_basic_model_creation]: >>>>> stage basic model started <<<<<
+[2021-11-21 15:47:07,136: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-21 15:47:32,531: INFO: common]: created directory at: artifacts\models
+[2021-11-21 15:47:32,546: INFO: 01_basic_model_creation]: base model saved at artifacts\models\base_model.h5
+[2021-11-21 15:47:32,967: INFO: 01_basic_model_creation]: evaluation metrics [0.31541261076927185, 0.9099000096321106]
+[2021-11-21 15:47:32,998: INFO: 01_basic_model_creation]: >>>>> stage basic model completed!<<<<<
+
