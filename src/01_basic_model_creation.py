@@ -6,12 +6,13 @@ import logging
 from src.utils.common import read_yaml, create_directories
 import tensorflow as tf
 import io
+import time
 
 
 STAGE = "basic model" ## <<< change stage name 
 
 logging.basicConfig(
-    filename=os.path.join("logs", 'running_logs.log'), 
+    filename=os.path.join("logs", 'basic_running_logs.log'), 
     level=logging.INFO, 
     format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
     filemode="a"
@@ -62,24 +63,27 @@ def main(config_path):
         return summary_string
 
     ## model summary
-    logging.info(f"base model summary: \n{_log_model_summary(model)}")
+    logging.info(f"{STAGE} summary: \n{_log_model_summary(model)}")
 
     # training model
+    start = time.time()
     model.fit(X_train, y_train, 
     epochs=10,
     validation_data=(X_valid, y_valid),
     verbose=2)
+    end = time.time()
+    logging.info(f"time taken to train {STAGE} is {end - start}")
 
     # save the base model
     model_dir_path = os.path.join("artifacts", "models")
     create_directories([model_dir_path])
 
-    model_file_path = os.path.join(model_dir_path, "base_model.h5")
+    model_file_path = os.path.join(model_dir_path, "basic_model.h5")
 
     model.save(model_file_path)
 
-    logging.info(f"base model saved at {model_file_path}")
-    logging.info(f"evaluation metrics {model.evaluate(X_test, y_test)}")
+    logging.info(f"{STAGE} saved at {model_file_path}")
+    logging.info(f"{STAGE} evaluation metrics {model.evaluate(X_test, y_test)}")
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()

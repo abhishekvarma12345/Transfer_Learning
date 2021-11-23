@@ -1,0 +1,33 @@
+[2021-11-23 18:36:43,789: INFO: 01_basic_model_creation]: 
+********************
+[2021-11-23 18:36:43,789: INFO: 01_basic_model_creation]: >>>>> stage basic model started <<<<<
+[2021-11-23 18:36:43,790: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:36:44,189: INFO: 01_basic_model_creation]: basic model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:37:08,217: INFO: 01_basic_model_creation]: time taken to train basic model is 24.027410984039307
+[2021-11-23 18:37:08,217: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:37:08,230: INFO: 01_basic_model_creation]: basic model saved at artifacts\models\basic_model.h5
+[2021-11-23 18:37:08,591: INFO: 01_basic_model_creation]: basic model evaluation metrics [0.31626591086387634, 0.9092000126838684]
+[2021-11-23 18:37:08,607: INFO: 01_basic_model_creation]: >>>>> stage basic model completed!<<<<<
+
