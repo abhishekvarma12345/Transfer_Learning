@@ -7,3 +7,763 @@
 [2021-11-21 15:47:32,967: INFO: 01_basic_model_creation]: evaluation metrics [0.31541261076927185, 0.9099000096321106]
 [2021-11-21 15:47:32,998: INFO: 01_basic_model_creation]: >>>>> stage basic model completed!<<<<<
 
+[2021-11-21 16:00:53,623: INFO: 01_basic_model_creation]: 
+********************
+[2021-11-21 16:00:53,623: INFO: 01_basic_model_creation]: >>>>> stage basic model started <<<<<
+[2021-11-21 16:00:53,624: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-21 16:01:19,396: INFO: common]: created directory at: artifacts\models
+[2021-11-21 16:01:19,409: INFO: 01_basic_model_creation]: base model saved at artifacts\models\base_model.h5
+[2021-11-21 16:01:19,773: INFO: 01_basic_model_creation]: evaluation metrics [0.31626591086387634, 0.9092000126838684]
+[2021-11-21 16:01:19,802: INFO: 01_basic_model_creation]: >>>>> stage basic model completed!<<<<<
+
+[2021-11-23 12:01:07,128: INFO: 01_basic_model_creation]: 
+********************
+[2021-11-23 12:01:07,128: INFO: 01_basic_model_creation]: >>>>> stage basic model started <<<<<
+[2021-11-23 12:01:07,129: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 12:01:07,490: INFO: 01_basic_model_creation]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 12:01:31,588: INFO: common]: created directory at: artifacts\models
+[2021-11-23 12:01:31,604: INFO: 01_basic_model_creation]: base model saved at artifacts\models\base_model.h5
+[2021-11-23 12:01:31,971: INFO: 01_basic_model_creation]: evaluation metrics [0.31626591086387634, 0.9092000126838684]
+[2021-11-23 12:01:31,983: INFO: 01_basic_model_creation]: >>>>> stage basic model completed!<<<<<
+
+[2021-11-23 13:00:08,694: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:00:08,695: INFO: 02_transfer_learning]: >>>>> stage basic model started <<<<<
+[2021-11-23 13:00:08,695: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:00:09,037: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 13:00:32,185: INFO: common]: created directory at: artifacts\models
+[2021-11-23 13:00:32,200: INFO: 02_transfer_learning]: base model saved at artifacts\models\base_model.h5
+[2021-11-23 13:00:32,587: INFO: 02_transfer_learning]: evaluation metrics [0.31626591086387634, 0.9092000126838684]
+[2021-11-23 13:00:32,606: INFO: 02_transfer_learning]: >>>>> stage basic model completed!<<<<<
+
+[2021-11-23 13:01:06,353: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:01:06,353: INFO: 02_transfer_learning]: >>>>> stage basic model started <<<<<
+[2021-11-23 13:01:06,354: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:01:06,690: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 13:01:29,980: INFO: common]: created directory at: artifacts\models
+[2021-11-23 13:01:29,992: INFO: 02_transfer_learning]: base model saved at artifacts\models\base_model.h5
+[2021-11-23 13:01:30,365: INFO: 02_transfer_learning]: evaluation metrics [0.31626591086387634, 0.9092000126838684]
+[2021-11-23 13:01:30,383: INFO: 02_transfer_learning]: >>>>> stage basic model completed!<<<<<
+
+[2021-11-23 13:06:11,995: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:06:11,995: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:06:11,996: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:06:12,271: ERROR: 02_transfer_learning]: module 'keras.api._v2.keras' has no attribute 'model'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 88, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 39, in main
+    base_model = tf.keras.model.load_model(model_file_path)
+AttributeError: module 'keras.api._v2.keras' has no attribute 'model'
+[2021-11-23 13:06:39,811: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:06:39,811: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:06:39,812: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:06:40,081: ERROR: 02_transfer_learning]: module 'keras.api._v2.keras' has no attribute 'model'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 88, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 39, in main
+    base_model = tf.keras.model.load_model(model_file_path)
+AttributeError: module 'keras.api._v2.keras' has no attribute 'model'
+[2021-11-23 13:06:52,603: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:06:52,603: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:06:52,604: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:06:52,957: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 13:07:16,508: INFO: common]: created directory at: artifacts\models
+[2021-11-23 13:07:16,519: INFO: 02_transfer_learning]: transfer model saved at artifacts\models\base_model1.h5
+[2021-11-23 13:07:16,889: INFO: 02_transfer_learning]: transfer model evaluation metrics [0.263404905796051, 0.925599992275238]
+[2021-11-23 13:07:16,906: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:09:01,527: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:09:01,527: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:09:01,528: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:09:01,879: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 13:09:25,667: INFO: common]: created directory at: artifacts\models
+[2021-11-23 13:09:25,677: INFO: 02_transfer_learning]: transfer model saved at artifacts\models\base_model1.h5
+[2021-11-23 13:09:26,045: INFO: 02_transfer_learning]: transfer model evaluation metrics [0.263404905796051, 0.925599992275238]
+[2021-11-23 13:09:26,064: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:09:33,628: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:09:33,628: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:09:33,629: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:09:34,002: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:09:56,006: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:09:56,006: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:09:56,007: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:09:56,378: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:10:32,188: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:10:32,189: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:10:32,189: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:10:32,561: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:11:35,435: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:11:35,435: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:11:35,436: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:11:35,813: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:13:24,758: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:13:24,758: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:13:24,759: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:13:25,134: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:13:44,671: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:13:44,671: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:13:44,672: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:13:45,042: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 13:15:28,413: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:15:28,413: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:15:28,414: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:15:28,762: ERROR: 02_transfer_learning]: 'list' object has no attribute 'layers'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 92, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 42, in main
+    for layer in base_model.layers:
+AttributeError: 'list' object has no attribute 'layers'
+[2021-11-23 13:16:10,156: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 13:16:10,156: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 13:16:10,157: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 13:16:10,531: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 17:58:02,805: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 17:58:02,805: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 17:58:02,806: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 17:58:03,250: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 17:58:03,251: ERROR: 02_transfer_learning]: 'list' object has no attribute 'add'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 106, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 61, in main
+    transfer_model = base_model.add(tf.keras.Dense(1, activation="sigmoid"))
+AttributeError: 'list' object has no attribute 'add'
+[2021-11-23 18:00:54,433: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:00:54,434: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:00:54,434: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:00:54,810: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:00:54,810: ERROR: 02_transfer_learning]: 'list' object has no attribute 'add'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 106, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 61, in main
+    transfer_model = base_model.add(tf.keras.Dense(1, activation="sigmoid"))
+AttributeError: 'list' object has no attribute 'add'
+[2021-11-23 18:01:24,271: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:01:24,271: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:01:24,272: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:01:24,645: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:01:24,659: ERROR: 02_transfer_learning]: module 'keras.api._v2.keras' has no attribute 'Dense'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 106, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 61, in main
+    transfer_model = tf.keras.models.Sequential(base_model).add(tf.keras.Dense(1, activation="sigmoid"))
+AttributeError: module 'keras.api._v2.keras' has no attribute 'Dense'
+[2021-11-23 18:01:42,240: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:01:42,240: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:01:42,241: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:01:42,615: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:01:42,627: ERROR: 02_transfer_learning]: All layers added to a Sequential model should have unique names. Name "dense" is already the name of a layer in this model. Update the `name` argument to pass a unique name.
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 106, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 61, in main
+    transfer_model = tf.keras.models.Sequential(base_model).add(tf.keras.layers.Dense(1, activation="sigmoid"))
+  File "C:\Users\abhis\Desktop\iNeuron\Transfer_Learning\env\lib\site-packages\tensorflow\python\training\tracking\base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\abhis\Desktop\iNeuron\Transfer_Learning\env\lib\site-packages\keras\utils\traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\abhis\Desktop\iNeuron\Transfer_Learning\env\lib\site-packages\keras\engine\sequential.py", line 184, in add
+    'All layers added to a Sequential model '
+ValueError: All layers added to a Sequential model should have unique names. Name "dense" is already the name of a layer in this model. Update the `name` argument to pass a unique name.
+[2021-11-23 18:02:29,165: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:02:29,165: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:02:29,166: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:02:29,538: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:02:29,556: ERROR: 02_transfer_learning]: 'NoneType' object has no attribute 'compile'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 106, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 68, in main
+    transfer_model.compile(loss=LOSS, optimizer=OPTIMIZER, metrics=METRICS)
+AttributeError: 'NoneType' object has no attribute 'compile'
+[2021-11-23 18:03:56,662: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:03:56,662: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:03:56,663: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:03:57,049: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:03:57,070: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 1)                 101       
+                                                                 
+=================================================================
+Total params: 265,701
+Trainable params: 101
+Non-trainable params: 265,600
+_________________________________________________________________
+
+[2021-11-23 18:04:14,575: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:04:14,575: ERROR: 02_transfer_learning]: 'list' object has no attribute 'save'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 108, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 95, in main
+    base_model.save(model_file_path)
+AttributeError: 'list' object has no attribute 'save'
+[2021-11-23 18:04:52,609: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:04:52,609: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:04:52,610: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:04:52,986: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:04:53,006: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 1)                 101       
+                                                                 
+=================================================================
+Total params: 265,701
+Trainable params: 101
+Non-trainable params: 265,600
+_________________________________________________________________
+
+[2021-11-23 18:05:10,379: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:05:10,379: ERROR: 02_transfer_learning]: 'list' object has no attribute 'save'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 108, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 95, in main
+    base_model.save(model_file_path)
+AttributeError: 'list' object has no attribute 'save'
+[2021-11-23 18:05:21,035: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:05:21,035: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:05:21,036: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:05:21,443: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:05:21,467: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 1)                 101       
+                                                                 
+=================================================================
+Total params: 265,701
+Trainable params: 101
+Non-trainable params: 265,600
+_________________________________________________________________
+
+[2021-11-23 18:05:39,077: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:05:39,088: INFO: 02_transfer_learning]: transfer model saved at artifacts\models\transfer_model.h5
+[2021-11-23 18:05:39,089: ERROR: 02_transfer_learning]: 'list' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "src/02_transfer_learning.py", line 108, in <module>
+    main(config_path=parsed_args.config)
+  File "src/02_transfer_learning.py", line 98, in main
+    logging.info(f"{STAGE} evaluation metrics {base_model.evaluate(X_test, y_test)}")
+AttributeError: 'list' object has no attribute 'evaluate'
+[2021-11-23 18:06:04,451: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:06:04,451: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:06:04,452: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:06:04,828: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:06:04,847: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 1)                 101       
+                                                                 
+=================================================================
+Total params: 265,701
+Trainable params: 101
+Non-trainable params: 265,600
+_________________________________________________________________
+
+[2021-11-23 18:06:22,565: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:06:22,576: INFO: 02_transfer_learning]: transfer model saved at artifacts\models\transfer_model.h5
+[2021-11-23 18:06:23,096: INFO: 02_transfer_learning]: transfer model evaluation metrics [1.9201148748397827, 0.009499999694526196]
+[2021-11-23 18:06:23,114: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 18:07:49,488: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:07:49,488: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:07:49,489: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:07:49,880: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:07:49,900: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 1)                 101       
+                                                                 
+=================================================================
+Total params: 265,701
+Trainable params: 101
+Non-trainable params: 265,600
+_________________________________________________________________
+
+[2021-11-23 18:08:07,280: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:08:07,291: INFO: 02_transfer_learning]: transfer model saved at artifacts\models\transfer_model.h5
+[2021-11-23 18:08:07,814: INFO: 02_transfer_learning]: transfer model evaluation metrics [1.9201148748397827, 0.009499999694526196]
+[2021-11-23 18:08:07,833: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
+[2021-11-23 18:08:22,576: INFO: 02_transfer_learning]: 
+********************
+[2021-11-23 18:08:22,576: INFO: 02_transfer_learning]: >>>>> stage transfer model started <<<<<
+[2021-11-23 18:08:22,577: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-23 18:08:22,950: INFO: 02_transfer_learning]: base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ dense_2 (Dense)             (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2021-11-23 18:08:22,973: INFO: 02_transfer_learning]: transfer model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ dense_1 (Dense)             (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 1)                 101       
+                                                                 
+=================================================================
+Total params: 265,701
+Trainable params: 101
+Non-trainable params: 265,600
+_________________________________________________________________
+
+[2021-11-23 18:08:40,040: INFO: common]: created directory at: artifacts\models
+[2021-11-23 18:08:40,051: INFO: 02_transfer_learning]: transfer model saved at artifacts\models\transfer_model.h5
+[2021-11-23 18:08:40,425: INFO: 02_transfer_learning]: transfer model evaluation metrics [0.3101651668548584, 0.869700014591217]
+[2021-11-23 18:08:40,442: INFO: 02_transfer_learning]: >>>>> stage transfer model completed!<<<<<
+
